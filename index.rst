@@ -12,7 +12,6 @@ Welcome to cs3300t2p2's documentation!
    markdown/project_layout.md
    markdown/software_development_process.md
    markdown/team_contribution.md
-   myfile.md
    :maxdepth: 2
    :caption: Contents:
    
