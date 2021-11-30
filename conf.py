@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'cs3300t2p2'
-copyright = '2021, Alexander Puckhaber'
+copyright = '2021, Alexander Puckhaber, Andrew Harris, Dilip Paruchuri, Thien Dinh-Do, Caden Farley'
 author = 'Alexander Puckhaber'
 
 # The full version, including alpha/beta/rc tags
