@@ -53,4 +53,4 @@ jobs:
           git add _build/
           git checkout -b gh-pages
           git commit -m "deploying to GitHub pages"
-          git push
+          git push --set-upstream origin gh-pages
