@@ -7,6 +7,7 @@ Welcome to cs3300t2p2's documentation!
 ======================================
 
 .. toctree::
+   markdown/
    myfile.md
    :maxdepth: 2
    :caption: Contents:
