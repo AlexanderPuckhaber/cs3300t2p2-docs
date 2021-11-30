@@ -8,9 +8,12 @@
 2. Spring Boot								
    - Version 2.5.5									
    - This system must use Spring Boot to run the application. System will communicate when it needs to build the application, and software will create that application during runtime.
-3. Google Cloud Platform Datastore (Only Required Software)		
+3. Google Cloud Platform Datastore	
    - GCP Datastore								
    - This system must just use GCP Datastore for its database component. Communication occurs through either HTTPS or Google Cloud Interconnect & VPN. Data that will be transmitted by the system must be in the proper format of the table data structures in GCP Datastore.
+4. AWS S#
+   - We used an S3 bucket to upload images from our Spring Boot system.
+   - Thymeleaf HTML views load images from the S3 bucket to display in-browser.
 
 ### User Interfaces
 The main interface between the software product and the users will be a GUI, which will ultimately be a webpage with textboxes, checkboxes, buttons, display tables, and forms for users to fill out. The textboxes and checkboxes will be primarily for user inputs where users will specify the fields such as item title, cost, description, and category. In addition there will also be an image upload field, which will be optional. Buttons will be utilized for committing changes such as adding a new item, editing an existing item, or deleting an existing item. Additionally, the same UI elements will be used for the filter search portion of the project. The UI elements will have the same fields but different layout. As this is a web page, the main way that the user will physically communicate with the system will be through the standard keyboard and mouse setup.
@@ -27,7 +30,7 @@ The main interface between the software product and the users will be a GUI, whi
 
 ### Assumptions and Dependencies
 - One assumption is that users will be utilizing one of the later web browsers versions when running the web application. If they are not, of one of the dependencies is that if they are running a much older version such as Internet Explorer 1, the intricate frontend features such as an interactive map may not be compatible.
-- Another assumption is that users have Java 8, or a later version installed to be able to run the undeployed version of the LSW as a Spring Boot application. If not, the LSW will have to deployed to be hosted locally or through external services such as deployment through containers, or through Amazon Web Services or Azure.
+- Another assumption is that users have Java 8, or a later version installed to be able to run the undeployed version of the LSW as a Spring Boot application. If not, the LSW will have to deployed to be hosted locally or through external services such as deployment through containers, or through Amazon Web Services or Azure. (We ended up hosting the project on an AWS Lightsail server).
 - Apportioning of Requirements
     1. Evolution 0: Basic Project Functionality
     2. Evolution 1: GT Verification for Registration
