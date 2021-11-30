@@ -43,9 +43,10 @@ jobs:
       
       - name: Build html
         run |
+          make clean
           make html
 
-      - name: Deploy to gh-pages
+      - name: deploy yay
         run |
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
