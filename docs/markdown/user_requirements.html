@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Requirements &mdash; cs3300t2p2 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Project Layout" href="project_layout.html" />
+    <link rel="prev" title="Introduction (Assignment 1)" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> cs3300t2p2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project_description.html">Project Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction (Assignment 1)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#software-interfaces">Software Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-interfaces">User Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#product-functions">Product Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-characteristics">User Characteristics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assumptions-and-dependencies">Assumptions and Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_layout.html">Project Layout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_development_process.html">Software Development Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quality_control.html">Quality Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Test Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_contribution.html">Team Contribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="future_work.html">Future Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">cs3300t2p2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>User Requirements</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/markdown/user_requirements.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="user-requirements">
+<h1>User Requirements<a class="headerlink" href="#user-requirements" title="Permalink to this headline"></a></h1>
+<section id="software-interfaces">
+<h2>Software Interfaces<a class="headerlink" href="#software-interfaces" title="Permalink to this headline"></a></h2>
+<ol class="simple">
+<li><p>Apache Maven</p>
+<ul class="simple">
+<li><p>Maven</p></li>
+<li><p>Version 3.8.2</p></li>
+<li><p>This system must use Maven which is a POM based project management tool. System will communicate its dependencies to Maven, which will be managed by the external software.</p></li>
+</ul>
+</li>
+<li><p>Spring Boot</p>
+<ul class="simple">
+<li><p>Version 2.5.5</p></li>
+<li><p>This system must use Spring Boot to run the application. System will communicate when it needs to build the application, and software will create that application during runtime.</p></li>
+</ul>
+</li>
+<li><p>Google Cloud Platform Datastore</p>
+<ul class="simple">
+<li><p>GCP Datastore</p></li>
+<li><p>This system must just use GCP Datastore for its database component. Communication occurs through either HTTPS or Google Cloud Interconnect &amp; VPN. Data that will be transmitted by the system must be in the proper format of the table data structures in GCP Datastore.</p></li>
+</ul>
+</li>
+<li><p>AWS S3</p>
+<ul class="simple">
+<li><p>We used an S3 bucket to upload images from our Spring Boot system.</p></li>
+<li><p>Thymeleaf HTML views load images from the S3 bucket to display in-browser.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="user-interfaces">
+<h2>User Interfaces<a class="headerlink" href="#user-interfaces" title="Permalink to this headline"></a></h2>
+<p>The main interface between the software product and the users will be a GUI, which will ultimately be a webpage with textboxes, checkboxes, buttons, display tables, and forms for users to fill out. The textboxes and checkboxes will be primarily for user inputs where users will specify the fields such as item title, cost, description, and category. In addition there will also be an image upload field, which will be optional. Buttons will be utilized for committing changes such as adding a new item, editing an existing item, or deleting an existing item. Additionally, the same UI elements will be used for the filter search portion of the project. The UI elements will have the same fields but different layout. As this is a web page, the main way that the user will physically communicate with the system will be through the standard keyboard and mouse setup.</p>
+</section>
+<section id="product-functions">
+<h2>Product Functions<a class="headerlink" href="#product-functions" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>GT Marketplace will enable its users to create new ite posts with the following fields: title, description, cost, category, and an optional image upload. Once created, these items will be able to be viewed by all users on the GT Marketplace home page.</p></li>
+<li><p>GT Marketplace will allow its users to view all of the item posts they made in a my posts tab on the application. In this my posts tab, the users will have the option and ability to edit or delete any of their existing posts. Once edited or deleted, the changes will be reflected on the home page and the my posts page.</p></li>
+<li><p>GT Marketplace will only allow Georgia Tech students to register and utilize the applications services. When registering a new user, the user must enter a valid GTID and Georgia Tech email for successful registration.</p></li>
+<li><p>GT Marketplace will have a filter search feature which will allow any user to search for specific items from all of the item posts. The filter options will include the following: item name, item cost, item category, item min and max cost.</p></li>
+<li><p>GT Marketplace will have a messages page that a user can use to send an email to another user. The messages page takes in a username and email message body, and then sends the email to the intended user.</p></li>
+</ul>
+</section>
+<section id="user-characteristics">
+<h2>User Characteristics<a class="headerlink" href="#user-characteristics" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>The intended users of this product are specifically Georgia Tech students, however the knowledge and expertise they must possess to operate the webpage will not be higher than that of general internet users. For convenience, the goal of the GT Marketplace UI design is to mimic that of existing marketplaces such as the Facebook Marketplace since general internet users would already know how to navigate in that environment. Moreover, the structure of the webpage is organized and well-labeled so that general internet users can understand what each component of the webpage does intuitively.</p></li>
+</ul>
+</section>
+<section id="assumptions-and-dependencies">
+<h2>Assumptions and Dependencies<a class="headerlink" href="#assumptions-and-dependencies" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>One assumption is that users will be utilizing one of the later web browsers versions when running the web application. If they are not, of one of the dependencies is that if they are running a much older version such as Internet Explorer 1, the intricate frontend features such as an interactive map may not be compatible.</p></li>
+<li><p>Another assumption is that the developers have Java 8, or a later version installed to be able to run the undeployed version of the GT Marketplace as a Spring Boot application. If not, the web application will have to deployed to be hosted locally or through external services such as deployment through containers, or through Amazon Web Services or Azure.</p>
+<ul>
+<li><p>Thankfully, this concern was unwarranted as we were able to each develop locally. For the demos, we ended up hosting the project on an AWS Lightsail server.</p></li>
+<li><p>Both local development and the demos are dependent on the GCP Datastore and AWS S3 bucket being operational. Otherwise, the application will fail to initialize.</p></li>
+</ul>
+</li>
+<li><p>Apportioning of Requirements</p>
+<ol class="simple">
+<li><p>Evolution 0: Basic Project Functionality</p></li>
+<li><p>Evolution 1: GT Verification for Registration</p></li>
+<li><p>Evolution 2: Adding Image Upload Functionality</p></li>
+<li><p>Evolution 3: Adding Filter Search Feature</p></li>
+<li><p>Evolution 4: Edit/Delete Item Functionality</p></li>
+<li><p>Evolution 5: Email Functionality</p></li>
+<li><p>Evolution 6: Integration and Testing</p></li>
+</ol>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction (Assignment 1)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="project_layout.html" class="btn btn-neutral float-right" title="Project Layout" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Alexander Puckhaber, Andrew Harris, Dilip Paruchuri, Thien Dinh-Do, Caden Farley.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
