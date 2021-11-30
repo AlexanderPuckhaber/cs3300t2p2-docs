@@ -45,7 +45,19 @@ You can search by multiple filters, and the matching items will be shown.
 
 ### View, Edit, and Delete Your Posts
 
+![Edit and Delete Image](../images/edit_delete.png)
 
-
+By picking an action in the dropdown menu, you can either go to an edit screen, or delete the item entirely.
 
 ### Message Seller
+
+Once you have identified an item you want, copy the username to your clipboard. Then, go to the Messages page.
+
+![Message Page Image](../images/message.png)
+
+Type the recipient username and the message you want to send.
+Make sure to put your contact info, because this email will be sent from the server, not you!
+
+![Message Page Result](../images/message_result.png)
+
+The resulting email. Make sure to check your junk folder!
