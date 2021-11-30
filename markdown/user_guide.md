@@ -22,6 +22,7 @@ Any integer of the form `903xxxxxx` (`903` followed by any 6 digits) will suffic
 Hopefully you remember your username/password combination!
 
 ### Home Page
+![Home Page Image](../images/home_page)
 
 ### Create Post
 
