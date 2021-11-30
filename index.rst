@@ -17,6 +17,7 @@ Welcome to cs3300t2p2's documentation!
    markdown/quality_control.md
    markdown/testing.md
    markdown/team_contribution.md
+   markdown/user_guide.md
    :maxdepth: 2
    :caption: Contents:
    

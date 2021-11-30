@@ -12,3 +12,4 @@ The GT Marketplace is a secure application for Georgia Tech students to post ite
 | Spring Boot | Creates standalone applications that will run independent of an external web server |
 | Google Cloud Datastore | Highly scalable NoSQL database for building applications |
 | POM | Project Object Model |
+| AWS S3 | Amazon Web Services S3 buckets are used to store files and serve them over the internet |

@@ -10,8 +10,8 @@ We used Shell commands to create, query, and delete Users and InventoryItems.
 #### Manual Tests
 Below are some of the manual test performed:
 - Registration 
-  - Checked if email field of registration page ended in "@gatech.edu"
-  - Checked if GTID field of registration page started with "903" and has 9 digits
+  - Checked if email field of registration page ended in `@gatech.edu`
+  - Checked if GTID field of registration page started with `903` and has 9 digits
 - Adding/Deleting/Editing Post Functionality
   - Added single title field to determine if inventoryItem was posted into the repository and displayed on the Home Page and the My Post Page
   - Performed editing and deleting on items while printing the full inventory repository is printed to the console on each action

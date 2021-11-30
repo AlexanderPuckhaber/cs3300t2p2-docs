@@ -11,7 +11,7 @@
 3. Google Cloud Platform Datastore	
    - GCP Datastore								
    - This system must just use GCP Datastore for its database component. Communication occurs through either HTTPS or Google Cloud Interconnect & VPN. Data that will be transmitted by the system must be in the proper format of the table data structures in GCP Datastore.
-4. AWS S#
+4. AWS S3
    - We used an S3 bucket to upload images from our Spring Boot system.
    - Thymeleaf HTML views load images from the S3 bucket to display in-browser.
 
@@ -30,7 +30,9 @@ The main interface between the software product and the users will be a GUI, whi
 
 ### Assumptions and Dependencies
 - One assumption is that users will be utilizing one of the later web browsers versions when running the web application. If they are not, of one of the dependencies is that if they are running a much older version such as Internet Explorer 1, the intricate frontend features such as an interactive map may not be compatible.
-- Another assumption is that users have Java 8, or a later version installed to be able to run the undeployed version of the LSW as a Spring Boot application. If not, the LSW will have to deployed to be hosted locally or through external services such as deployment through containers, or through Amazon Web Services or Azure. (We ended up hosting the project on an AWS Lightsail server).
+- Another assumption is that the developers have Java 8, or a later version installed to be able to run the undeployed version of the GT Marketplace as a Spring Boot application. If not, the web application will have to deployed to be hosted locally or through external services such as deployment through containers, or through Amazon Web Services or Azure. 
+  - Thankfully, this concern was unwarranted as we were able to each develop locally. For the demos, we ended up hosting the project on an AWS Lightsail server.
+  - Both local development and the demos are dependent on the GCP Datastore and AWS S3 bucket being operational. Otherwise, the application will fail to initialize.
 - Apportioning of Requirements
     1. Evolution 0: Basic Project Functionality
     2. Evolution 1: GT Verification for Registration
