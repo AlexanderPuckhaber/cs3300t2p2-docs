@@ -1,7 +1,7 @@
 
 ## Future Work
 
-These are the features we didn't quite get to:
+These are the features we didn't quite get to
 
 ### Additional Functionality
 - The "Edit" interface does not currently support changing the item's image. This could easily be added.
@@ -16,3 +16,7 @@ These are the features we didn't quite get to:
 - HTTPS for the web server
   - This would have taken more time to implement, as we would have to use something like Let's Encrypt to get a CA certificate. Additionally, we would need our own domain name.
   - Although, we could have achieved this if we had deployed through a hosting provider that supports SSL and subdomains. Instead, we just hosted it on a random AWS Lightsail server one of us had lying around.
+
+### Maintenance
+
+- Automated unit tests would be useful in catching regression errors. Especially with merge conflicts, it is very easy to make mistakes. Automated tests and/or Continuous Integration would help us catch those errors more quickly (preferrably before pull-requests are completed) to ensure that we don't mess up each others' features.
