@@ -11,6 +11,7 @@ Welcome to cs3300t2p2's documentation!
    markdown/introduction.md
    markdown/project_layout.md
    markdown/software_development_process.md
+   markdown/quality_control.md
    markdown/testing.md
    markdown/team_contribution.md
    :maxdepth: 2
