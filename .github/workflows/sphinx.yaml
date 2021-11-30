@@ -50,9 +50,9 @@ jobs:
         run: |
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
-          touch docs/.nojekyll
           mv docs docs_sphinx
           mv docs_sphinx/html docs
+          touch docs/.nojekyll
           git add docs/
           git checkout -b gh-pages
           git commit -m "deploying to GitHub pages"
