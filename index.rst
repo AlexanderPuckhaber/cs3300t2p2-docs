@@ -6,6 +6,8 @@
 Welcome to cs3300t2p2's documentation!
 ======================================
 
+`Link to documentation repository <https://github.com/AlexanderPuckhaber/cs3300t2p2-docs>`_
+
 .. toctree::
    markdown/project_description.md
    markdown/introduction.md
