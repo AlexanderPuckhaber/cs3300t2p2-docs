@@ -51,10 +51,10 @@ jobs:
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
           rm -rf docs_sphinx
-          mv images docs/images
           mv docs docs_sphinx
           mv docs_sphinx/html docs
           touch docs/.nojekyll
+          mv images docs/images
           git add docs/
           git checkout -b gh-pages
           git commit -m "deploying to GitHub pages"
