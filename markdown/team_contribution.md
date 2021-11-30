@@ -1,6 +1,22 @@
 ## Team Contribution
-* Alex: Datastore and S3 backend, Image upload, misc. UI
-* Andrew: Frontend dev, Homepage UI
-* Dilip: Backend dev, Filter Search, Edit/Delete Post, Email functionality
-* Thien: Backend dev, Email functionality, Chatroom Functionality
-* Caden: UI, login, posts, and homepage
+* Alex: 
+  * Datastore and S3 Backend 
+  * Image Upload
+  * Misc. UI
+* Andrew: 
+  * Frontend Development 
+  * Homepage UI
+* Dilip: 
+  * Backend Development 
+  * Filter Search
+  * Edit/Delete Post
+  * Email Functionality
+* Thien: 
+  * Backend Development 
+  * Email Functionality
+  * Chatroom Functionality
+* Caden: 
+  * Overall UI
+  * Login
+  * Posts
+  * Homepage
