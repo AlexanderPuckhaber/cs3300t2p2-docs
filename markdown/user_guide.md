@@ -24,8 +24,28 @@ Hopefully you remember your username/password combination!
 ### Home Page
 ![Home Page Image](../images/home_page.png)
 
+On the home screen, you can see a list of all the items in the database.
+
 ### Create Post
+![Create Post Image](../images/create_post.png)
+
+Fill out the fields for your post, and choose the most applicable category.
+
+If you want to upload an image, download it to your computer so you can upload it as a file.
+Or, leave the image field blank, and a placeholder image will be chosen.
+
+![Create Post Result Image](../images/create_post_result.png)
+
+Back on the home page, scroll around until you find your post. Or, go to the filter tab.
+
+### Search and Filter Posts
+![Search Post Result Image](../images/search.png)
+
+You can search by multiple filters, and the matching items will be shown.
 
 ### View, Edit, and Delete Your Posts
+
+
+
 
 ### Message Seller
