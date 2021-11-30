@@ -9,6 +9,7 @@ Welcome to cs3300t2p2's documentation!
 .. toctree::
    markdown/project_description.md
    markdown/introduction.md
+   markdown/user_requirements.md
    markdown/project_layout.md
    markdown/software_development_process.md
    markdown/quality_control.md
