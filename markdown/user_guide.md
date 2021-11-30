@@ -8,7 +8,7 @@ If the website is down, you may have to compile from source [here](https://githu
 To use our website, you will need to login. 
 
 #### Register
-![Register Image](../images/register)
+![Register Image](../images/register.png)
 
 You must input a valid email (ends in `@gatech.edu`).
 Also, the system checks for a reasonable GTID number.
@@ -17,12 +17,12 @@ Any integer of the form `903xxxxxx` (`903` followed by any 6 digits) will suffic
 
 
 #### Login
-![Login Image](../images/login)
+![Login Image](../images/login.png)
 
 Hopefully you remember your username/password combination!
 
 ### Home Page
-![Home Page Image](../images/home_page)
+![Home Page Image](../images/home_page.png)
 
 ### Create Post
 
